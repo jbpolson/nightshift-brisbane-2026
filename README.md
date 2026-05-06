@@ -92,3 +92,9 @@ Before merging a pull request, check:
 For a non-coder team, Netlify is the easiest option because every pull request gets a preview link.
 
 GitHub Pages is also fine for a simple static site, but PR previews are less friendly.
+
+## Project Links
+
+- Live site: https://nightshift-brisbane-2026.netlify.app
+- GitHub repo: https://github.com/jbpolson/nightshift-brisbane-2026
+- Netlify admin: https://app.netlify.com/projects/nightshift-brisbane-2026
