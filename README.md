@@ -30,6 +30,8 @@ http://localhost:8080
 
 Use one branch per change. Keep each Codex task small and specific.
 
+For the non-technical team handout, see `TEAM-INSTRUCTIONS.md`.
+
 1. Create a new branch from `main`.
 2. Ask Codex to make one clear change.
 3. Preview the page in a browser.
