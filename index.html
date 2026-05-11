@@ -695,40 +695,6 @@
       }
     }
 
-    /* ---- VILLAGE ---- */
-    #village .village-items {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1px;
-      background: rgba(255,255,255,0.08);
-      margin-top: 48px;
-    }
-    .village-item {
-      background: var(--black);
-      padding: 40px 32px;
-    }
-    .village-item-num {
-      font-family: var(--mono);
-      font-size: 11px;
-      letter-spacing: 0.2em;
-      color: var(--green);
-      margin-bottom: 20px;
-      opacity: 0.7;
-    }
-    .village-item-title {
-      font-family: var(--display);
-      font-size: 26px;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 12px;
-    }
-    .village-item-body {
-      font-family: var(--body);
-      font-size: 14px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.5);
-    }
-
     /* ---- ENTRY ---- */
     #entry {
       background: var(--green);
@@ -1095,7 +1061,6 @@
       .entry-grid,
       .faq-grid { grid-template-columns: 1fr; gap: 40px; }
       .cats-grid { grid-template-columns: 1fr 1fr; }
-      .village .village-items { grid-template-columns: 1fr; }
       .full-split { grid-template-columns: 1fr; }
       .split-content { padding: 48px 24px; }
       .sponsor-tier { grid-template-columns: 1fr; gap: 16px; }
@@ -1122,7 +1087,6 @@
     <ul class="nav-links">
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#entry">Entry</a></li>
-      <li><a href="#village">Village</a></li>
       <li><a href="#sponsors">Sponsors</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
@@ -1301,44 +1265,6 @@
       </div>
     </div>
   </div>
-
-  <!-- VILLAGE -->
-  <section id="village">
-    <div class="section-label reveal">Event Village</div>
-    <h2 class="section-title reveal reveal-delay-1">More than<br>a crit night.</h2>
-    <div class="village-items reveal reveal-delay-2">
-      <div class="village-item">
-        <div class="village-item-num">01 ·</div>
-        <div class="village-item-title">Food &amp; Drink</div>
-        <div class="village-item-body">2–3 food vendors. Burgers, tacos, pizza, coffee, and cold drinks. Easy to eat trackside. A licensed area if permits allow.</div>
-      </div>
-      <div class="village-item">
-        <div class="village-item-num">02 ·</div>
-        <div class="village-item-title">Music &amp; MC</div>
-        <div class="village-item-body">A DJ setting the tone from warm-up into night racing. Not nightclub. Not Triple M. A sharp MC who can explain the racing, build hype, and keep the schedule moving.</div>
-      </div>
-      <div class="village-item">
-        <div class="village-item-num">03 ·</div>
-        <div class="village-item-title">Merch &amp; Retail</div>
-        <div class="village-item-body">Limited Nightshift Brisbane merch drop. Event tee, socks, cap, and select kit. Black. Pixel type. Brisbane stamped. Tour-merch energy, not race-meet energy.</div>
-      </div>
-      <div class="village-item">
-        <div class="village-item-num">04 ·</div>
-        <div class="village-item-title">Lighting</div>
-        <div class="village-item-body">Track-safe racing lights. Feature lighting at the start/finish. Electric blue and green accents. The night shift starts when the sun drops.</div>
-      </div>
-      <div class="village-item">
-        <div class="village-item-num">05 ·</div>
-        <div class="village-item-title">Spectators</div>
-        <div class="village-item-body">Free to watch. Bring mates, family, noise, and questionable advice. Trackside viewing. Loud corners. Friends heckling politely from the fence.</div>
-      </div>
-      <div class="village-item">
-        <div class="village-item-num">06 ·</div>
-        <div class="village-item-title">Prizes</div>
-        <div class="village-item-body">Equal prize money for Men's A and Women's A podiums. Cash, vouchers, and partner product for lower grades. Prime laps throughout. Best attack prize.</div>
-      </div>
-    </div>
-  </section>
 
   <!-- PHOTO STRIP -->
   <div class="photo-strip">
