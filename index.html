@@ -507,6 +507,9 @@
       text-transform: uppercase;
       color: rgba(255,255,255,0.4);
     }
+    .intro-title {
+      white-space: nowrap;
+    }
     .pull-quote {
       font-family: var(--display);
       font-size: clamp(28px, 4vw, 52px);
@@ -1088,6 +1091,7 @@
       .contact-strip { flex-direction: column; align-items: flex-start; }
       .hero-meta { flex-direction: column; gap: 16px; }
       .hero-wordmark { width: min(78vw, 460px); }
+      .intro-title { font-size: clamp(32px, 8vw, 48px); }
       #entry { padding: 72px 24px; }
     }
   </style>
@@ -1188,7 +1192,7 @@
       </div>
       <div class="intro-right">
         <div class="section-label reveal">The Event</div>
-        <h2 class="section-title reveal reveal-delay-1">Racing<br>under<br>lights.</h2>
+        <h2 class="section-title intro-title reveal reveal-delay-1">Racing under lights.</h2>
         <p class="section-body reveal reveal-delay-2">Nightshift takes over Murarrie for one night only. Fast racing, loud corners, food, drinks, music, and the kind of trackside energy usually missing from local crits.</p>
         <p class="section-body reveal reveal-delay-2" style="margin-top:16px;">On Saturday, 20 June, we're turning Brisbane's home of criterium racing into an after-dark race night for riders, spectators, friends, families, and anyone who thinks cycling is better when it gets a little less sensible.</p>
         <div class="intro-stats reveal reveal-delay-3">
@@ -1201,7 +1205,7 @@
             <div class="stat-label">Circuit</div>
           </div>
           <div class="stat-block">
-            <div class="stat-number">Free</div>
+            <div class="stat-number">FREE</div>
             <div class="stat-label">Spectator Entry</div>
           </div>
           <div class="stat-block">
