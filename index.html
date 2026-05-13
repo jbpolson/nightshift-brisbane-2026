@@ -766,62 +766,6 @@
       background: var(--gray-dark);
       border-top: 1px solid rgba(255,255,255,0.06);
     }
-    .sponsor-tiers {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      margin-top: 48px;
-    }
-    .sponsor-tier {
-      display: grid;
-      grid-template-columns: 240px 1fr auto;
-      gap: 40px;
-      align-items: start;
-      padding: 40px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-    .tier-name {
-      font-family: var(--mono);
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--green);
-      padding-top: 4px;
-    }
-    .tier-title {
-      font-family: var(--display);
-      font-size: 22px;
-      text-transform: uppercase;
-      color: var(--white);
-      margin-bottom: 8px;
-    }
-    .tier-desc {
-      font-family: var(--body);
-      font-size: 14px;
-      line-height: 1.6;
-      color: rgba(255,255,255,0.45);
-    }
-    .tier-includes {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .tier-include-item {
-      font-family: var(--mono);
-      font-size: 11px;
-      letter-spacing: 0.08em;
-      color: rgba(255,255,255,0.4);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .tier-include-item::before {
-      content: '';
-      width: 4px;
-      height: 4px;
-      background: var(--green);
-      flex-shrink: 0;
-    }
 
     /* ---- PHOTO STRIP ---- */
     .photo-strip {
@@ -1015,6 +959,43 @@
       color: var(--green);
       -webkit-text-stroke: none;
     }
+    .marquee-block--sponsors {
+      padding: 24px 0;
+      background: var(--gray-dark);
+    }
+    .marquee-block--sponsors .marquee-inner {
+      align-items: center;
+      gap: 72px;
+    }
+    .marquee-logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 92px;
+      flex: 0 0 auto;
+      opacity: 0.28;
+    }
+    .marquee-logo.accent {
+      opacity: 1;
+    }
+    .marquee-logo img {
+      display: block;
+      max-width: 100%;
+      max-height: 72px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+    }
+    .marquee-logo--black-sheep,
+    .marquee-logo--hutchinson {
+      width: 360px;
+    }
+    .marquee-logo--felons img {
+      max-height: 82px;
+    }
+    .marquee-logo--blackroll img {
+      transform: scale(1.8);
+    }
 
     /* ---- CONTACT STRIP ---- */
     .contact-strip {
@@ -1063,7 +1044,6 @@
       .cats-grid { grid-template-columns: 1fr 1fr; }
       .full-split { grid-template-columns: 1fr; }
       .split-content { padding: 48px 24px; }
-      .sponsor-tier { grid-template-columns: 1fr; gap: 16px; }
       .photo-strip { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; text-align: left; }
       .footer-right { align-items: flex-start; }
@@ -1320,54 +1300,26 @@
 
   <!-- SPONSORS -->
   <section id="sponsors">
-    <div class="section-label reveal">Partnerships</div>
-    <h2 class="section-title reveal reveal-delay-1">Sponsor<br>Nightshift.</h2>
-    <p class="section-body reveal reveal-delay-2">Nightshift Brisbane is a brand-owned cycling event with a genuine community. Reach serious cyclists, their families, and the broader performance community in a high-attention environment.</p>
-
-    <div class="sponsor-tiers reveal reveal-delay-3">
-      <div class="sponsor-tier">
-        <div class="tier-name">Presenting Partner</div>
-        <div>
-          <div class="tier-title">Nightshift Brisbane<br>Presented by [You]</div>
-          <div class="tier-desc">Full naming integration across the event. First-call presence across all touchpoints — digital, social, on-course, MC mentions, and event village.</div>
-        </div>
-        <div class="tier-includes">
-          <div class="tier-include-item">Naming rights integration</div>
-          <div class="tier-include-item">Start / finish signage</div>
-          <div class="tier-include-item">Social inclusion</div>
-          <div class="tier-include-item">Event village presence</div>
-          <div class="tier-include-item">MC mentions throughout</div>
-          <div class="tier-include-item">Content inclusion</div>
-        </div>
-      </div>
-      <div class="sponsor-tier">
-        <div class="tier-name">Category Partners</div>
-        <div>
-          <div class="tier-title">Own a Race Grade<br>or Moment</div>
-          <div class="tier-desc">Beer partner, coffee partner, women's racing partner, intro-grade partner, recovery partner, prize partner. Own a specific moment or audience within the event.</div>
-        </div>
-        <div class="tier-includes">
-          <div class="tier-include-item">Category naming</div>
-          <div class="tier-include-item">Signage and barrier branding</div>
-          <div class="tier-include-item">MC mentions</div>
-          <div class="tier-include-item">Product / prize integration</div>
-          <div class="tier-include-item">Social post inclusion</div>
-        </div>
-      </div>
-      <div class="sponsor-tier">
-        <div class="tier-name">Prize Partners</div>
-        <div>
-          <div class="tier-title">Prizes &amp; Primes</div>
-          <div class="tier-desc">Cash primes during racing, podium product, best attack prizes. High-visibility, trackside moments with direct athlete audience.</div>
-        </div>
-        <div class="tier-includes">
-          <div class="tier-include-item">MC call-out during racing</div>
-          <div class="tier-include-item">Product on podium</div>
-          <div class="tier-include-item">Social recognition</div>
-        </div>
-      </div>
-    </div>
+    <div class="section-label reveal">Sponsors &amp; Partners</div>
+    <h2 class="section-title reveal reveal-delay-1">Powered<br>by Partners.</h2>
+    <p class="section-body reveal reveal-delay-2">Nightshift Brisbane is made possible by the brands backing the race, the riders, and the after-dark energy at Murarrie.</p>
   </section>
+
+  <!-- SPONSOR MARQUEE -->
+  <div class="marquee-block marquee-block--sponsors" aria-hidden="true">
+    <div class="marquee-inner" style="animation-direction:reverse;">
+      <span class="marquee-logo marquee-logo--black-sheep accent"><img src="assets/images/image-01-41a111b4.svg" alt=""></span>
+      <span class="marquee-logo"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--felons"><img src="assets/images/logo-felons-brewing.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--blackroll accent"><img src="assets/images/logo-blackroll.png" alt=""></span>
+      <span class="marquee-logo marquee-logo--hutchinson"><img src="assets/images/logo-hutchinson-builders.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--black-sheep accent"><img src="assets/images/image-01-41a111b4.svg" alt=""></span>
+      <span class="marquee-logo"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--felons"><img src="assets/images/logo-felons-brewing.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--blackroll accent"><img src="assets/images/logo-blackroll.png" alt=""></span>
+      <span class="marquee-logo marquee-logo--hutchinson"><img src="assets/images/logo-hutchinson-builders.svg" alt=""></span>
+    </div>
+  </div>
 
   <!-- CONTACT STRIP -->
   <div class="contact-strip reveal">
@@ -1375,23 +1327,7 @@
       <strong>Interested in sponsoring Nightshift Brisbane?</strong>
       Get in touch to discuss packages and availability.
     </div>
-    <a href="mailto:events@blacksheep.cc" class="contact-email">events@blacksheep.cc</a>
-  </div>
-
-  <!-- MARQUEE 2 -->
-  <div class="marquee-block" aria-hidden="true">
-    <div class="marquee-inner" style="animation-direction:reverse;">
-      <span class="marquee-word">Nightshift</span>
-      <span class="marquee-word accent">Brisbane</span>
-      <span class="marquee-word">20.06.26</span>
-      <span class="marquee-word">Murarrie</span>
-      <span class="marquee-word accent">After Dark</span>
-      <span class="marquee-word">Nightshift</span>
-      <span class="marquee-word accent">Brisbane</span>
-      <span class="marquee-word">20.06.26</span>
-      <span class="marquee-word">Murarrie</span>
-      <span class="marquee-word accent">After Dark</span>
-    </div>
+    <a href="mailto:info@blacksheepcycling.cc" class="contact-email">info@blacksheepcycling.cc</a>
   </div>
 
   <!-- FAQ -->
@@ -1400,7 +1336,7 @@
       <div>
         <div class="section-label reveal">FAQ</div>
         <h2 class="section-title reveal reveal-delay-1">Good<br>questions.</h2>
-        <p class="section-body reveal reveal-delay-2" style="margin-top:16px;">More details in the rider guide closer to the event. Questions: <a href="mailto:events@blacksheep.cc" style="color:var(--green);">events@blacksheep.cc</a></p>
+        <p class="section-body reveal reveal-delay-2" style="margin-top:16px;">More details in the rider guide closer to the event. Questions: <a href="mailto:info@blacksheepcycling.cc" style="color:var(--green);">info@blacksheepcycling.cc</a></p>
       </div>
       <div class="faq-list">
         <div class="faq-item">
@@ -1455,7 +1391,7 @@
       <div class="footer-right">
         <ul class="footer-links">
           <li><a href="https://blacksheep.cc" target="_blank" rel="noopener">blacksheep.cc</a></li>
-          <li><a href="mailto:events@blacksheep.cc">Contact</a></li>
+          <li><a href="mailto:info@blacksheepcycling.cc">Contact</a></li>
           <li><a href="https://entryboss.cc" target="_blank" rel="noopener">Enter Now</a></li>
         </ul>
         <div style="font-family:var(--mono); font-size:9px; letter-spacing:0.15em; text-transform:uppercase; color:rgba(255,255,255,0.15);">© 2026 Black Sheep Performance Apparel</div>
