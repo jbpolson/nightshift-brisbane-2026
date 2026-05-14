@@ -530,7 +530,7 @@
     }
     .schedule-grid {
       display: grid;
-      grid-template-columns: 1fr 1.6fr;
+      grid-template-columns: 1fr 1fr;
       gap: 80px;
       align-items: start;
     }
@@ -592,7 +592,7 @@
     }
     .schedule-photo img {
       width: 100%;
-      aspect-ratio: 4/5;
+      aspect-ratio: 653 / 727;
       object-fit: cover;
       display: block;
     }
@@ -663,6 +663,8 @@
     .split-image {
       overflow: hidden;
       position: relative;
+      padding: 48px;
+      background: var(--gray-dark);
     }
     .split-image img {
       width: 100%;
@@ -964,16 +966,18 @@
       background: var(--gray-dark);
     }
     .marquee-block--sponsors .marquee-inner {
+      display: inline-flex;
       align-items: center;
-      gap: 72px;
+      gap: 64px;
+      animation: ticker 40s linear infinite;
     }
     .marquee-logo {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      width: 300px;
+      width: 240px;
       height: 92px;
-      flex: 0 0 auto;
+      flex: 0 0 240px;
       opacity: 0.28;
     }
     .marquee-logo.accent {
@@ -981,20 +985,21 @@
     }
     .marquee-logo img {
       display: block;
-      max-width: 100%;
+      width: 100%;
+      max-width: 220px;
       max-height: 72px;
       object-fit: contain;
       filter: brightness(0) invert(1);
-    }
-    .marquee-logo--black-sheep,
-    .marquee-logo--hutchinson {
-      width: 360px;
     }
     .marquee-logo--felons img {
       max-height: 82px;
     }
     .marquee-logo--blackroll img {
-      transform: scale(1.8);
+      max-width: 220px;
+    }
+    .marquee-logo--pure img,
+    .marquee-logo--kask img {
+      max-width: 220px;
     }
 
     /* ---- CONTACT STRIP ---- */
@@ -1042,7 +1047,16 @@
       .entry-grid,
       .faq-grid { grid-template-columns: 1fr; gap: 40px; }
       .cats-grid { grid-template-columns: 1fr 1fr; }
-      .full-split { grid-template-columns: 1fr; }
+      .full-split {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .split-content { order: 1; }
+      .split-image {
+        order: 2;
+        min-height: 360px;
+        padding: 24px;
+      }
       .split-content { padding: 48px 24px; }
       .photo-strip { grid-template-columns: 1fr 1fr; }
       .footer-inner { grid-template-columns: 1fr; text-align: left; }
@@ -1223,7 +1237,6 @@
       </div>
       <div class="schedule-photo reveal reveal-delay-2">
         <img src="assets/images/image-02-0617768e.jpg" alt="Nightshift criterium racing" loading="lazy">
-        <div class="schedule-photo-caption">Murarrie Criterium Track · Brisbane · 2026</div>
       </div>
     </div>
   </section>
@@ -1243,19 +1256,6 @@
       <div style="margin-top:36px;">
         <a href="#faq" class="btn-outline">Venue FAQ</a>
       </div>
-    </div>
-  </div>
-
-  <!-- PHOTO STRIP -->
-  <div class="photo-strip">
-    <div class="photo-strip-item">
-      <img src="assets/images/image-03-38e960a9.jpg" alt="Racing" loading="lazy" style="aspect-ratio:3/2;">
-    </div>
-    <div class="photo-strip-item">
-      <img src="assets/images/image-07-74f67ae8.jpg" alt="Event atmosphere" loading="lazy">
-    </div>
-    <div class="photo-strip-item">
-      <img src="assets/images/image-04-fa39c607.jpg" alt="Black Sheep rider" loading="lazy">
     </div>
   </div>
 
@@ -1308,16 +1308,18 @@
   <!-- SPONSOR MARQUEE -->
   <div class="marquee-block marquee-block--sponsors" aria-hidden="true">
     <div class="marquee-inner" style="animation-direction:reverse;">
-      <span class="marquee-logo marquee-logo--black-sheep accent"><img src="assets/images/image-01-41a111b4.svg" alt=""></span>
       <span class="marquee-logo"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--blackroll"><img src="assets/images/logo-blackroll.png" alt=""></span>
       <span class="marquee-logo marquee-logo--felons"><img src="assets/images/logo-felons-brewing.svg" alt=""></span>
-      <span class="marquee-logo marquee-logo--blackroll accent"><img src="assets/images/logo-blackroll.png" alt=""></span>
       <span class="marquee-logo marquee-logo--hutchinson"><img src="assets/images/logo-hutchinson-builders.svg" alt=""></span>
-      <span class="marquee-logo marquee-logo--black-sheep accent"><img src="assets/images/image-01-41a111b4.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--kask"><img src="assets/images/logo-kask.png" alt=""></span>
+      <span class="marquee-logo marquee-logo--pure"><img src="assets/images/logo-pure.png" alt=""></span>
       <span class="marquee-logo"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--blackroll"><img src="assets/images/logo-blackroll.png" alt=""></span>
       <span class="marquee-logo marquee-logo--felons"><img src="assets/images/logo-felons-brewing.svg" alt=""></span>
-      <span class="marquee-logo marquee-logo--blackroll accent"><img src="assets/images/logo-blackroll.png" alt=""></span>
       <span class="marquee-logo marquee-logo--hutchinson"><img src="assets/images/logo-hutchinson-builders.svg" alt=""></span>
+      <span class="marquee-logo marquee-logo--kask"><img src="assets/images/logo-kask.png" alt=""></span>
+      <span class="marquee-logo marquee-logo--pure"><img src="assets/images/logo-pure.png" alt=""></span>
     </div>
   </div>
 
