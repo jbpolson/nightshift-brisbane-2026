@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nightshift Brisbane — 20 June 2026</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <style>/* cyrillic-ext */
@@ -458,6 +459,12 @@
       color: rgba(255,255,255,0.65);
       max-width: 580px;
     }
+    .section-body a,
+    .faq-a a,
+    .footer-links a,
+    .contact-email {
+      color: var(--green);
+    }
 
     /* ---- INTRO ---- */
     #intro {
@@ -682,21 +689,6 @@
     .split-content.dark {
       background: var(--black);
     }
-    .venue-title {
-      font-size: 24px;
-      white-space: nowrap;
-    }
-    @media (min-width: 768px) {
-      .venue-title {
-        font-size: 38px;
-      }
-    }
-    @media (min-width: 1200px) {
-      .venue-title {
-        font-size: 52px;
-      }
-    }
-
     /* ---- ENTRY ---- */
     #entry {
       background: var(--green);
@@ -914,11 +906,11 @@
       font-size: 10px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.3);
+      color: var(--green);
       text-decoration: none;
       transition: color 0.2s;
     }
-    .footer-links a:hover { color: var(--white); }
+    .footer-links a:hover { opacity: 0.8; }
 
     /* ---- SCROLL REVEAL ---- */
     .reveal {
@@ -1181,8 +1173,8 @@
             <div class="stat-label">Spectator Entry</div>
           </div>
           <div class="stat-block">
-            <div class="stat-number">6+</div>
-            <div class="stat-label">Hours of Racing</div>
+            <div class="stat-number">$10K+</div>
+            <div class="stat-label">In prizes</div>
           </div>
         </div>
         <div class="pull-quote reveal reveal-delay-4">Seven grades.<br><em>One circuit.</em><br>Lights on.</div>
@@ -1251,8 +1243,8 @@
     <div class="split-content">
       <div class="section-label">The Venue</div>
       <h2 class="section-title venue-title">Murarrie Criterium Track</h2>
-      <p class="section-body" style="margin-top:16px;">Brisbane's purpose-built closed-circuit home for fast racing. No road closures. Purpose-built for criteriums. Strong spectator visibility. Space for the full event village.</p>
-      <p class="section-body" style="margin-top:16px;">The challenge is making Murarrie feel different. The site gets dressed, lit, and activated — so it doesn't just feel like a regular crit night with a banner on the fence.</p>
+      <p class="section-body" style="margin-top:16px;">We're taking over Brisbane's purpose-built closed-circuit. No road closures. Built for criteriums. Strong spectator visibility.</p>
+      <p class="section-body" style="margin-top:16px;">This isn't a regular crit night with a banner on the fence. Felons will be pouring cold ones from a DJ-topped fire truck. BlackRoll will be set up with recovery boots and guns so you can sort your legs out post-race. And PURE has your nutrition sorted from warm-up to wind-down.</p>
       <div style="margin-top:36px;">
         <a href="#faq" class="btn-outline">Venue FAQ</a>
       </div>
@@ -1261,9 +1253,10 @@
 
   <!-- ENTRY -->
   <section id="entry">
-    <div class="section-label">Entry</div>
-    <h2 class="section-title">Enter the<br>Night Shift.</h2>
-    <p class="section-body">Entries managed through EntryBoss. You'll need an appropriate AusCycling race licence or event licence — details confirmed at entry.</p>
+    <div class="section-label">Entry &amp; Prizes</div>
+    <h2 class="section-title">Enter the<br>Nightshift.</h2>
+    <p class="section-body">Enter via EntryBoss in the link below.</p>
+    <p class="section-body" style="margin-top:16px;">Race hard, stay late, and you're in the draw for over $10,000 worth of prizes. $500 cash goes to both the Men's and Women's A Grade winners. Numbers drawn randomly at the end of the night and you must be there to collect your prize or it gets redrawn. Full details at EntryBoss.</p>
     <div class="entry-grid">
       <div>
         <table class="pricing-table">
@@ -1343,7 +1336,7 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-q">Do I need a race licence?<span class="faq-icon">+</span></button>
-          <div class="faq-a">Yes. Riders will need the appropriate AusCycling race licence or event licence, depending on the final sanctioning setup. Details will be confirmed in the entry process via EntryBoss.</div>
+          <div class="faq-a">Yes. Riders will need the appropriate AusCycling race licence or event licence. For a one day license <a href="https://auscycling.tidyhq.com/public/membership_levels/d3f211f03006" target="_blank" rel="noopener">head here</a>. More details will in the entry process via EntryBoss.</div>
         </div>
         <div class="faq-item">
           <button class="faq-q">Can I race if I've never raced before?<span class="faq-icon">+</span></button>
@@ -1355,7 +1348,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q">Is there food and drink?<span class="faq-icon">+</span></button>
-          <div class="faq-a">Yes. We're planning 2–3 food vendors, drinks, coffee, and non-alcoholic options. A licensed area if permits allow. Easy to eat trackside.</div>
+          <div class="faq-a">Yes. Felons are pouring, there's coffee for the warm-up and 1-2 food vendors trackside to keep you going. Non-alcoholic options covered too.</div>
         </div>
         <div class="faq-item">
           <button class="faq-q">Can juniors race?<span class="faq-icon">+</span></button>
