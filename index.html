@@ -220,10 +220,22 @@
       padding: 14px 40px;
       border-bottom: 1px solid rgba(255,255,255,0.08);
     }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+    }
+    .nav-logo {
+      display: inline-flex;
+      align-items: center;
+    }
     .nav-logo img {
       height: 20px;
       display: block;
       filter: brightness(0) invert(1);
+    }
+    .nav-logo--focus img {
+      height: 14px;
     }
     .nav-links {
       display: flex;
@@ -1053,6 +1065,9 @@
     @media (max-width: 900px) {
       nav { padding: 16px 24px; }
       nav.scrolled { padding: 12px 24px; }
+      .nav-brand { gap: 14px; }
+      .nav-logo img { height: 18px; }
+      .nav-logo--focus img { height: 12px; }
       .nav-links { display: none; }
       section { padding: 72px 24px; }
       #hero { padding-bottom: 48px; }
@@ -1093,9 +1108,14 @@
 
   <!-- NAV -->
   <nav id="main-nav">
-    <a class="nav-logo" href="https://blacksheep.cc" target="_blank" rel="noopener">
-      <img src="assets/images/image-01-41a111b4.svg" alt="Black Sheep">
-    </a>
+    <div class="nav-brand">
+      <a class="nav-logo" href="https://blacksheep.cc" target="_blank" rel="noopener">
+        <img src="assets/images/image-01-41a111b4.svg" alt="Black Sheep">
+      </a>
+      <a class="nav-logo nav-logo--focus" href="https://www.focus-bikes.com/" target="_blank" rel="noopener">
+        <img src="assets/images/logo-focus-wordmark-white.png" alt="Focus">
+      </a>
+    </div>
     <ul class="nav-links">
       <li><a href="#schedule">Schedule</a></li>
       <li><a href="#entry">Entry</a></li>
@@ -1159,13 +1179,13 @@
     <div class="ticker-inner">
       <span class="ticker-item">Clock On. Clip In. <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Saturday Night Racing <span class="ticker-sep">·</span></span>
-      <span class="ticker-item">Murarrie After Dark <span class="ticker-sep">·</span></span>
+      <span class="ticker-item">Muzz after dark <span class="ticker-sep">·</span></span>
       <span class="ticker-item">20.06.26 <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Brisbane, You're On Shift <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Race After Dark. Regret Nothing. <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Clock On. Clip In. <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Saturday Night Racing <span class="ticker-sep">·</span></span>
-      <span class="ticker-item">Murarrie After Dark <span class="ticker-sep">·</span></span>
+      <span class="ticker-item">Muzz after dark <span class="ticker-sep">·</span></span>
       <span class="ticker-item">20.06.26 <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Brisbane, You're On Shift <span class="ticker-sep">·</span></span>
       <span class="ticker-item">Race After Dark. Regret Nothing. <span class="ticker-sep">·</span></span>
@@ -1328,13 +1348,13 @@
   <!-- SPONSOR MARQUEE -->
   <div class="marquee-block marquee-block--sponsors" aria-hidden="true">
     <div class="marquee-inner" style="animation-direction:reverse;">
-      <span class="marquee-logo"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
+      <span class="marquee-logo accent"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
       <span class="marquee-logo marquee-logo--blackroll"><img src="assets/images/logo-blackroll.png" alt=""></span>
       <span class="marquee-logo marquee-logo--felons"><img src="assets/images/logo-felons-brewing.svg" alt=""></span>
       <span class="marquee-logo marquee-logo--hutchinson"><img src="assets/images/logo-hutchinson-builders.svg" alt=""></span>
       <span class="marquee-logo marquee-logo--kask"><img src="assets/images/logo-kask.png" alt=""></span>
       <span class="marquee-logo marquee-logo--pure"><img src="assets/images/logo-pure.png" alt=""></span>
-      <span class="marquee-logo"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
+      <span class="marquee-logo accent"><img src="assets/images/logo-focus-bikes.svg" alt=""></span>
       <span class="marquee-logo marquee-logo--blackroll"><img src="assets/images/logo-blackroll.png" alt=""></span>
       <span class="marquee-logo marquee-logo--felons"><img src="assets/images/logo-felons-brewing.svg" alt=""></span>
       <span class="marquee-logo marquee-logo--hutchinson"><img src="assets/images/logo-hutchinson-builders.svg" alt=""></span>
