@@ -266,8 +266,10 @@
       text-decoration: none;
       border-radius: 999px;
       transition: opacity 0.2s;
+      white-space: nowrap;
     }
     .nav-cta:hover { opacity: 0.85; }
+    .nav-cta-short { display: none; }
 
     /* ---- HERO ---- */
     #hero {
@@ -1071,6 +1073,13 @@
       .nav-brand { gap: 14px; }
       .nav-logo img { height: 18px; }
       .nav-logo--focus img { height: 12px; }
+      .nav-cta {
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        padding: 9px 18px;
+      }
+      .nav-cta-long { display: none; }
+      .nav-cta-short { display: inline; }
       .nav-links { display: none; }
       section { padding: 72px 24px; }
       #hero { padding-bottom: 48px; }
@@ -1125,7 +1134,7 @@
       <li><a href="#sponsors">Sponsors</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="nav-cta" href="https://entryboss.cc/races/30887" target="_blank" rel="noopener">Enter Now</a>
+    <a class="nav-cta" href="https://entryboss.cc/races/30887" target="_blank" rel="noopener"><span class="nav-cta-long">Enter Now</span><span class="nav-cta-short">Enter</span></a>
   </nav>
 
   <!-- HERO -->
@@ -1263,16 +1272,15 @@
             </tr>
           </thead>
           <tbody>
-            <tr><td>3:00pm</td><td>Gates Open / Sign-on</td><td>—</td></tr>
-            <tr><td>3:45pm</td><td>Course Warm-up</td><td>20 min</td></tr>
-            <tr><td>4:15pm</td><td>Men's D / Intro Crit</td><td>25 min + 2</td></tr>
-            <tr><td>4:50pm</td><td>Women's C / Intro Crit</td><td>25 min + 2</td></tr>
-            <tr><td>5:25pm</td><td>Men's C</td><td>30 min + 2</td></tr>
-            <tr><td>6:05pm</td><td>Women's B</td><td>35 min + 2</td></tr>
-            <tr><td>6:50pm</td><td>Men's B</td><td>40 min + 2</td></tr>
-            <tr class="race-highlight"><td>7:35pm</td><td>Women's A</td><td>45 min + 2</td></tr>
-            <tr class="race-highlight"><td>8:25pm</td><td>Men's A</td><td>50 min + 2</td></tr>
-            <tr><td>9:15pm</td><td>Podiums / Presentations</td><td>—</td></tr>
+            <tr><td>3:30pm</td><td>Juniors U11 &amp; U9</td><td>10 min + 2 laps</td></tr>
+            <tr><td>3:30pm</td><td>Juniors U15 &amp; U13</td><td>20 min + 2 laps</td></tr>
+            <tr><td>4:00pm</td><td>Men's D Grade</td><td>30 min + 2 laps</td></tr>
+            <tr><td>4:00pm</td><td>Men's C Grade</td><td>40 min + 2 laps</td></tr>
+            <tr><td>5:00pm</td><td>Women's C &amp; D</td><td>35 min + 2 laps</td></tr>
+            <tr><td>6:00pm</td><td>Masters 40+</td><td>45 min + 2 laps</td></tr>
+            <tr><td>6:00pm</td><td>Men's B</td><td>45 min + 2 laps</td></tr>
+            <tr class="race-highlight"><td>7:00pm</td><td>Women's A &amp; B</td><td>45 min + 2 laps</td></tr>
+            <tr class="race-highlight"><td>7:00pm</td><td>Men's A</td><td>60 min + 2 laps</td></tr>
           </tbody>
         </table>
       </div>
@@ -1406,7 +1414,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-q">Can juniors race?<span class="faq-icon">+</span></button>
-          <div class="faq-a">Subject to AusCycling and club requirements, junior eligibility can be included. Details confirmed closer to the event.</div>
+          <div class="faq-a">Yes. We have junior categories from U9-U15. Take a look at <a href="https://entryboss.cc/races/30887" target="_blank" rel="noopener">EntryBoss</a> for more info.</div>
         </div>
         <div class="faq-item">
           <button class="faq-q">What if it rains?<span class="faq-icon">+</span></button>
